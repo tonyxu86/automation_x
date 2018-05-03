@@ -1,14 +1,12 @@
 # automation_x
 
 
-3、安装robot framework，执行pip install robotframework
-
-4、安装robotframework-ride，执行pip install robotframework-ride
-5、安装selenium2library，执行pip install robotframework-selenium2library
-
-6、安装decorator-3.3.3.tar，执行pip install decorator
-
-7、安装selenium，执行pip install selenium
+1、安装robot framework，执行pip install robotframework
+2、安装robotframework-ride，执行pip install robotframework-ride
+3、安装selenium2library，执行pip install robotframework-selenium2library
+4、安装decorator-3.3.3.tar，执行pip install decorator
+5、安装selenium，执行pip install selenium
+6、chromedriver.exe 放到python/scripts
 
 
 注意：需要在被控机上开启以下服务：
