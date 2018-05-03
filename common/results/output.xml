@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180503 23:09:45.947" generator="Robot 3.0.4 (Python 2.7.14 on win32)">
+<suite source="G:\workspace\automation_x\common\test1.robot" id="s1" name="Test1">
+<test id="s1-t1" name="Test title">
+<kw name="Runcommond" library="WinRemote">
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20180503 23:09:46.477" level="INFO">${result} = &lt;Response code 0, out " Volume in drive C i", err ""&gt;</msg>
+<status status="PASS" endtime="20180503 23:09:46.477" starttime="20180503 23:09:46.384"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<msg timestamp="20180503 23:09:46.477" level="INFO">&lt;Response code 0, out " Volume in drive C i", err ""&gt;</msg>
+<status status="PASS" endtime="20180503 23:09:46.477" starttime="20180503 23:09:46.477"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${result}</arg>
+</arguments>
+<status status="PASS" endtime="20180503 23:09:46.477" starttime="20180503 23:09:46.477"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://www.baidu.com</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180503 23:09:46.477" level="INFO">Opening browser 'chrome' to base url 'https://www.baidu.com'.</msg>
+<status status="PASS" endtime="20180503 23:09:51.743" starttime="20180503 23:09:46.477"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20180503 23:09:52.744" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180503 23:09:52.744" starttime="20180503 23:09:51.744"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="kw"]</arg>
+<arg>123</arg>
+</arguments>
+<msg timestamp="20180503 23:09:52.744" level="INFO">Typing text '123' into text field 'xpath=//*[@id="kw"]'.</msg>
+<status status="PASS" endtime="20180503 23:09:52.871" starttime="20180503 23:09:52.744"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="su"]</arg>
+</arguments>
+<msg timestamp="20180503 23:09:52.871" level="INFO">Clicking button 'xpath=//*[@id="su"]'.</msg>
+<status status="PASS" endtime="20180503 23:09:52.961" starttime="20180503 23:09:52.871"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20180503 23:09:54.962" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180503 23:09:54.962" starttime="20180503 23:09:52.962"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180503 23:09:58.040" starttime="20180503 23:09:54.962"></status>
+</kw>
+<status status="PASS" endtime="20180503 23:09:58.040" critical="yes" starttime="20180503 23:09:46.384"></status>
+</test>
+<doc>Suite description</doc>
+<status status="PASS" endtime="20180503 23:09:58.040" starttime="20180503 23:09:45.951"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Test1" pass="1">Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
